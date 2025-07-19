@@ -1,4 +1,5 @@
 # ПОЛНАЯ ПРЕДОБРАБОТКА ДАННЫХ
+# Python 3.13.1
 
 import pandas as pd
 import numpy as np
