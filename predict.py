@@ -58,7 +58,7 @@ def make_predictions(test_filepath='clean_test_final.csv',
     
     # Эмбеддинги
     print("Генерация эмбеддингов (может занять время)...")
-    model_emb = SentenceTransformer("paraphrase-multilingual-mpnet-base-v2") # Дает 768
+    model_emb = SentenceTransformer("ai-forever/sbert_large_nlu_ru") 
     name_embeddings_test = model_emb.encode(df_test['name'].astype(str).tolist(), show_progress_bar=True)
     type_embeddings_test = model_emb.encode(df_test['type'].astype(str).tolist(), show_progress_bar=True)
     
